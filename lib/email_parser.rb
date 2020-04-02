@@ -10,7 +10,7 @@ class EmailAddressParser
   end
   
   def parse
-    @email_addresses = @emails.split(",").chomp
+    @email_addresses = @emails.split(",").chomp!
   end
   
 end
