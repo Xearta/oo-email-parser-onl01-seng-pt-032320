@@ -10,7 +10,8 @@ class EmailAddressParser
   end
   
   def parse
-    @email_addresses = @emails.split(",").strip
+    @email_addresses = @emails.split(",")
+    @email_addresses.each {|email| email.strip}
     
   end
   
